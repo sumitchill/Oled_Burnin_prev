@@ -17,11 +17,8 @@ def turn_on():
     subprocess.run(["nircmd.exe", "monitor", "on"], shell=True)
 
     # Uses to move the cursor from a specific Co-ordinates!
-    # subprocess.run(["nircmd", "movecursor", "90", "75"], shell=True)
     subprocess.run(["nircmd", "movecursor", "96", "75"], shell=True)
-    # subprocess.run(["nircmd", "movecursor", "90", "32"], shell=True)
-    # subprocess.run(["nircmd.exe", "monitor", "on"], shell=True)
-
+  
 
 
     # Turn on the monitor (But the monitor turnsOff again after some seconds
