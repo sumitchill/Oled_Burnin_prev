@@ -56,5 +56,7 @@ GPIO 13 (Configurable) <-> OUT <br>
 ### Contributing
 Feel free to contribute to this project by submitting issues, proposing new features, or making improvements to the code..
 
-Thanku
+### License
+[GNU LICENSE](LICENSE)
 
+Thank You
