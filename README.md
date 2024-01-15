@@ -51,9 +51,9 @@ ESP32 | LD2410C
 GND <-> GND
 GPIO 13 (Configurable) <-> OUT
 
-![Alt text](../Images/wiring.jpg)
+![Alt text](images/wiring.jpg)
 
 ### Contributing
-Feel free to contribute to this project by submitting issues, proposing new features, or making improvements to the code.
+Feel free to contribute to this project by submitting issues, proposing new features, or making improvements to the code..
 
 
