@@ -63,7 +63,7 @@ void rest_api_action(int action)
           Serial.println("Sending Screen ON Request");
           // url = "http://192.168.1.3:8123/api/services/webostv/command";//For TV
           // url="http://192.168.0.102:8080/turnon";
-          url="http://192.168.6.63:8080/turnon";
+          url="http://192.168.6.63:8080/turnon"; //Server url (WIndows Machine)
 
           http.begin(client, url);
           http.GET();
