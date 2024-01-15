@@ -9,12 +9,10 @@
 
 
 // Connect to an SSID
-// const char* ssid = "TP-Link_4B6F";
-// const char* password = "14828355";
 
-const char* ssid = "sus";
-const char* password = "12345678";
-const char* laptopIP="192.168.0.102";
+const char* ssid = "SSID";
+const char* password = "password";
+const char* laptopIP="laptop_ip";
 
 // String haToken = "HOMEASSISTANTTOKEN";// used for controlling tv
 const int motionPin1 = 13;
@@ -59,11 +57,10 @@ void rest_api_action(int action)
     switch (action) {
     
         case 0: // Screen On
-            
+          // Use your IP based on your device 
           Serial.println("Sending Screen ON Request");
           // url = "http://192.168.1.3:8123/api/services/webostv/command";//For TV
-          // url="http://192.168.0.102:8080/turnon";
-          url="http://192.168.6.63:8080/turnon"; //Server url (WIndows Machine)
+          url="http://192.168.0.0:8080/turnon"; //Server url (WIndows Machine)
 
           http.begin(client, url);
           http.GET();
@@ -74,8 +71,7 @@ void rest_api_action(int action)
         case 1: // Screen Off
           Serial.println("Sending Screen OFF Request");
           // url = "http://192.168.0.117/:8123/api/services/media_player/turn_off";
-          // url="http://192.168.0.102:8080/turnoff";
-          url="http://192.168.6.63:8080/turnoff";
+          url="http://192.168.0.0:8080/turnoff";
           http.begin(client, url);
           http.GET();
           // http.addHeader("Authorization", "Bearer " + haToken);
@@ -84,8 +80,7 @@ void rest_api_action(int action)
           break;
         case 2: // Power
           Serial.println("Sending Power Off Request");
-          // url = "http://192.168.0.102:8080/screensaver";
-          url = "http://192.168.6.63:8080/screensaver";
+          url = "http://192.168.0.0:8080/screensaver";
 
           http.begin(client, url);
           http.GET();
