@@ -1,11 +1,10 @@
-# I built a device that automatically turn on/off my OLED monitor screen with a motion sensor. I use this OLED screen as a computer monitor , so this helps protect the OLED againts burn in when i'm away from the display.
-
-# I have also implemented the same steps with my OLED TV too, to protect it from burn in
-
 # ESP32 Motion Sensor Display Control
+ I built a device that automatically turn on/off my OLED monitor screen with a motion sensor. I use this OLED screen as a computer monitor , so this helps protect the OLED againts burn in when i'm away from the display. 
 
-This project is designed to automatically turn on/off an OLED monitor or TV screen using an ESP32 microcontroller and a motion sensor. The primary goal is to protect the OLED display from burn-in when the user is away from the display.
+ I have also implemented the same steps with my OLED TV too, to protect it from burn in
 
+ This project is designed to automatically turn on/off an OLED monitor or TV screen using an ESP32 microcontroller and a motion sensor. The primary goal is to protect the OLED display from burn-in when the user is away from the display.
+  
 ## Overview
 
 The device uses the following components:
@@ -46,14 +45,16 @@ The Home Assistant server is utilized to send commands to the OLED TV. This allo
 Adjust the WiFi credentials, server URLs, and other parameters in the Arduino code to match your specific hardware and network configuration.
 
 ## Wiring
-ESP32 | LD2410C
-5V <-> VCC
-GND <-> GND
-GPIO 13 (Configurable) <-> OUT
+ESP32 | LD2410C <br>
+5V <-> VCC <br>
+GND <-> GND <br>
+GPIO 13 (Configurable) <-> OUT <br>
+
 
 ![Alt text](images/wiring.jpg)
 
 ### Contributing
 Feel free to contribute to this project by submitting issues, proposing new features, or making improvements to the code..
 
+Thanku
 
